@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Services - High Quality Care</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<style>
+    /* Navigation Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 1rem 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2B7A78;
+}
+
+.nav-logo i {
+    font-size: 2rem;
+    color: #17A2B8;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link:hover {
+    color: #17A2B8;
+}
+
+.nav-link i {
+    font-size: 0.8rem;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.appointment-btn {
+    background: linear-gradient(135deg, #17A2B8, #2B7A78);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(23, 162, 184, 0.3);
+    white-space: nowrap;
+}
+
+.appointment-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(23, 162, 184, 0.4);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #333;
+    transition: all 0.3s ease;
+}
+
+/* Footer */
+
+/* Footer Styles */
+.footer {
+    position: relative;
+    background-color: #0e3b50;
+    color: #ffffff;
+    padding: 80px 20px 40px;
+    overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+.footer::before,
+.footer::after {
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.1;
+    transition: opacity 0.3s ease;
+}
+
+.footer::before {
+    background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 24 24" fill="%23fff" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M12 2L13.09 8.26L19 9.27L14.5 13.97L15.82 21L12 17.77L8.18 21L9.5 13.97L5 9.27L10.91 8.26L12 2Z"/%3E%3C/svg%3E');
+    width: 120px;
+    height: 120px;
+    top: 15%;
+    left: 5%;
+}
+
+.footer::after {
+    background-image: url('data:image/svg+xml,%3Csvg width="100" height="100" viewBox="0 0 24 24" fill="%23fff" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M12 2L13.09 8.26L19 9.27L14.5 13.97L15.82 21L12 17.77L8.18 21L9.5 13.97L5 9.27L10.91 8.26L12 2Z"/%3E%3C/svg%3E');
+    width: 80px;
+    height: 80px;
+    bottom: 15%;
+    right: 5%;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    padding: 0 16px;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-col h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.footer-col h4::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #d1d5db;
+    font-size: 0.95rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #3b82f6;
+    transform: translateX(5px);
+}
+
+.logo-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.logo-col h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    color: #d1d5db;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    max-width: 280px;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.social-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background: #3b82f6;
+    transform: scale(1.1);
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 48px;
+    padding-top: 24px;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+.copyright a {
+    color: #3b82f6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.copyright a:hover {
+    color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer {
+        padding: 60px 16px 32px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .footer-col h4 {
+        font-size: 1.1rem;
+    }
+
+    .logo-col h2 {
+        font-size: 1.6rem;
+    }
+
+    .footer p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 48px 12px 24px;
+    }
+
+    .footer-col h4 {
+        font-size: 1rem;
+    }
+
+    .footer-col ul li a {
+        font-size: 0.9rem;
+    }
+
+    .social-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        padding: 2rem;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        gap: 1.5rem;
+    }
+    
+    .nav-menu.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .mobile-menu-toggle.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .appointment-btn {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+    
+    .nav-container {
+        padding: 0 1.5rem;
+    }
+
+   
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+    
+    .nav-logo {
+        font-size: 1.3rem;
+    }
+    
+    .nav-logo i {
+        font-size: 1.8rem;
+    }
+    
+    .appointment-btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    
+    .appointment-btn span {
+        display: none;
+    }
+    
+    .appointment-btn::after {
+        content: "Book";
+    }
+}
+
+@media (max-width: 360px) {
+    .appointment-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+    .about-hero{
+          margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgba(239,248,255,255);
+    }
+     .about-section-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+        .about-section-hero h1 {
+            color: #1e3a8a;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #1e3a8a, #1e40af);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .about-section-hero p {
+            color: #1e40af;
+            font-size: 1em;
+            background: linear-gradient(to right, #1e40af, #1e3a8a);
+            -webkit-background-clip: text;
+            background-clip:text;
+            color: transparent;
+            
+        }
+        .about-section-hero p a{
+             text-decoration: none;
+        }
+        .background-icons-hero {
+           
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            text-decoration: none;
+        }
+        .background-icons-hero .icon {
+            position: absolute;
+            opacity: 0.3;
+        }
+        .background-icons-hero .star {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #04187b, #0c033cf4);
+            clip-path: polygon(50% 0%, 65% 35%, 100% 35%, 75% 55%, 85% 85%, 50% 70%, 15% 85%, 25% 55%, 0% 35%, 35% 35%);
+            filter: blur(2px);
+        }
+        @media (min-width: 768px) {
+            .about-section-hero h1 { font-size: 3em; }
+            .about-section p { font-size: 1.2em; }
+        }
+        @media (min-width: 1024px) {
+            .about-section-hero { min-height: 300px; }
+        }
+
+        /*map and contact us*/
+        .contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 64px 16px;
+}
+
+/* Section Headers */
+.section-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.section-label {
+    color: #3b82f6;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.highlight {
+    color: #3b82f6;
+}
+
+.section-description {
+    color: #6b7280;
+    font-size: 18px;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Contact Info Section */
+.contact-info-section {
+    margin-bottom: 80px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.contact-card {
+    background: white;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #06b6d4);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover::before {
+    transform: scaleX(1);
+}
+
+.card-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: all 0.3s ease;
+}
+
+.blue-icon {
+    background-color: #dbeafe;
+    color: #3b82f6;
+}
+
+.teal-icon {
+    background-color: #ccfbf1;
+    color: #0d9488;
+}
+
+.green-icon {
+    background-color: #dcfce7;
+    color: #16a34a;
+}
+
+.purple-icon {
+    background-color: #f3e8ff;
+    color: #9333ea;
+}
+
+.contact-card:hover .blue-icon {
+    background-color: #bfdbfe;
+    transform: scale(1.1);
+}
+
+.contact-card:hover .teal-icon {
+    background-color: #99f6e4;
+    transform: scale(1.1);
+}
+
+.contact-card:hover .green-icon {
+    background-color: #bbf7d0;
+    transform: scale(1.1);
+}
+
+.contact-card:hover .purple-icon {
+    background-color: #e9d5ff;
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 16px;
+}
+
+.card-content {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.phone-link, .email-link {
+    color: #3b82f6;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    margin-bottom: 4px;
+}
+
+.phone-link:hover, .email-link:hover {
+    color: #1d4ed8;
+}
+
+/* Map Container - Fixed Position */
+.body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+    min-height: 100vh;
+}
+
+.map-container {
+    background: white;
+    padding: 8px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.map-placeholder {
+    height: 320px;
+    border-radius: 12px;
+    background: #f0f9ff;
+    position: relative;
+    overflow: hidden;
+    background-image: 
+        radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+        radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: 2px solid #e0f2fe;
+}
+
+/* Map Grid Pattern */
+.map-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    opacity: 0.5;
+}
+
+/* Map Roads */
+.map-placeholder::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, transparent 0%, #3b82f6 20%, #3b82f6 80%, transparent 100%);
+    opacity: 0.6;
+}
+
+.map-marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 10;
+}
+
+.marker-pin {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    margin: 0 auto 16px;
+    animation: bounce 2s infinite;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(239, 68, 68, 0.3);
+    border: 3px solid white;
+}
+
+.marker-pin::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    width: 12px;
+    height: 12px;
+    background: white;
+    border-radius: 50%;
+}
+
+.marker-info {
+    background: white;
+    padding: 12px 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid #e5e7eb;
+    min-width: 180px;
+}
+
+.marker-title {
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+.marker-subtitle {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.map-controls {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 5;
+}
+
+.map-control {
+    width: 36px;
+    height: 36px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.map-control:hover {
+    background: #f9fafb;
+    transform: scale(1.05);
+}
+
+.map-control::before {
+    content: '+';
+    font-size: 18px;
+    font-weight: bold;
+    color: #374151;
+}
+
+.map-control:last-child::before {
+    content: '−';
+}
+
+.map-attribution {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 6px;
+    padding: 4px 8px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.map-attribution p {
+    font-size: 11px;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+/* -------- Contact Form Section: Improved Responsive -------- */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: start;
+    padding: 0 16px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.form-textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.submit-btn {
+    background: #3b82f6;
+    color: #fff;
+    padding: 14px 28px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #2563eb;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+}
+
+/* ---------- Image Section Styling for Form Layout ---------- */
+.image-container {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(30, 58, 138, 0.2) 0%, transparent 100%);
+}
+
+/* ----------- Media Queries for Responsiveness ------------ */
+
+@media (min-width: 768px) {
+    .form-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-image {
+        height: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-input,
+    .form-textarea {
+        padding: 12px 16px;
+        font-size: 15px;
+    }
+
+    .submit-btn {
+        padding: 12px 20px;
+        font-size: 15px;
+    }
+}
+
+</style>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <i class="fas fa-tooth"></i>
+            <span>Dentaire</span>
+        </div>
+        
+        <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="aboutus.html" class="nav-link">About Us</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="blogs.html" class="nav-link">Blogs <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+            </div>
+
+        <div class="nav-actions">
+            <button class="appointment-btn">
+                <span>Book Appointment</span>
+                <i class="fas fa-calendar-alt"></i>
+            </button>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="about-hero">
+  <div class="about-section-hero">
+        <div class="background-icons-hero">
+            <div class="icon star" style="top: 10%; left: 10%;"></div>
+            <div class="icon star" style="top: 70%; right: 10%;"></div>
+            <div class="icon star" style="top: 30%; left: 20%;"></div>
+            <div class="icon star" style="top: 50%; right: 20%;"></div>
+            <div class="icon star" style="top: 60%; left: 30%;"></div>
+            <div class="icon star" style="top: 20%; right: 30%;"></div>
+        </div>
+        <h1>Contacts</h1>
+       <p><a href="index.html">Home</a> / Contact Us</p>
+    </div>
+</section>
+<section class="body">
+ <div class="contact-container">
+        <!-- Top Section - Contact Info -->
+        <section class="contact-info-section fade-in">
+            <div class="section-header">
+                <p class="section-label">+ CONTACT INFO</p>
+                <h2 class="section-title">Connecting <span class="highlight">Near</span> & <span class="highlight">Far</span></h2>
+                <p class="section-description">
+                    For emergency dental care or to schedule an appointment, contact our office or visit our clinic.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Cards -->
+                <div class="contact-cards">
+                    <!-- Visit Us Card -->
+                    <div class="contact-card hover-lift">
+                        <div class="card-icon blue-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Visit Us On</h3>
+                        <p class="card-content">
+                            24/11 Robert Road, New<br>
+                            York, USA
+                        </p>
+                    </div>
+
+                    <!-- Contact Us Card -->
+                    <div class="contact-card hover-lift">
+                        <div class="card-icon teal-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Contact Us</h3>
+                        <div class="card-content">
+                            <p class="phone-link">(+01) 789 854 856</p>
+                            <p class="phone-link">(+01) 789 854 856</p>
+                        </div>
+                    </div>
+
+                    <!-- Working Hours Card -->
+                    <div class="contact-card hover-lift">
+                        <div class="card-icon green-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12,6 12,12 16,14"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Working Hours</h3>
+                        <div class="card-content">
+                            <p>Mon to Fri: 10:00 To 6:00</p>
+                            <p>Sat: 10:00AM To 3:00PM</p>
+                        </div>
+                    </div>
+
+                    <!-- Email Us Card -->
+                    <div class="contact-card hover-lift">
+                        <div class="card-icon purple-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="card-title">Email Us</h3>
+                        <div class="card-content">
+                            <p class="email-link">info@domainname.com</p>
+                            <p class="email-link">sales@domainname.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-container hover-lift">
+                    <div class="map-placeholder">
+                        <div class="map-marker">
+                            <div class="marker-pin"></div>
+                            <div class="marker-info">
+                                <p class="marker-title">24/11 Robert Road</p>
+                                <p class="marker-subtitle">New York, USA</p>
+                            </div>
+                        </div>
+                        <div class="map-controls">
+                            <div class="map-control"></div>
+                        </div>
+                        <div class="map-attribution">
+                            <p>Map data ©2024 Google</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bottom Section - Contact Form -->
+        <section class="contact-form-section fade-in-delayed">
+            <div class="form-grid">
+                <!-- Customer Service Image -->
+                <div class="image-container hover-scale">
+                    <img src="https://images.pexels.com/photos/7688336/pexels-photo-7688336.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                         alt="Customer Service Representative" 
+                         class="service-image">
+                    <div class="image-overlay"></div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="form-container">
+                    <div class="form-header">
+                        <p class="section-label">+ CONTACT US</p>
+                        <h2 class="section-title">Get In Touch <span class="highlight">With Us</span></h2>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Enter Name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Enter Email" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" name="phone" placeholder="Phone Number" class="form-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" placeholder="Subject" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <textarea name="message" placeholder="Your Message" rows="6" class="form-textarea"></textarea>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22,2 15,22 11,13 2,9 22,2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+  </section>
+<!--footer-->
+ <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo & Description -->
+      <div class="footer-col logo-col">
+        <h2>
+          <!-- Inline SVG Tooth Icon -->
+          <svg class="logo-icon" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 4C17 4 4 16 4 32s13 28 28 28 28-13 28-28S47 4 32 4zm0 4a24 24 0 0124 24c0 13.3-10.7 24-24 24S8 45.3 8 32 18.7 8 32 8z"/>
+            <path d="M24 20c-2 0-2 4-2 6s0 6 2 6 4-2 4-4-2-8-4-8zm16 0c-2 0-4 6-4 8s2 4 4 4 2-4 2-6 0-6-2-6z"/>
+          </svg>
+          <span>Dentaire</span>
+        </h2>
+        <p>
+          The goal our clinic is provide friendly, caring dentistry and highest level of general, cosmetic, and specialist dental treatments.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Appointment</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:info@domain.com">Info@Domain.Com</a></li>
+          <li><a href="tel:+1236985245">+(123) 698-5245</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      Copyright © 2024 All Rights Reserved.
+    </div>
+  </footer>
+    <script src="script.js"></script>
+    <script>
+        //contac us
+// Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+    
+    // Initialize animations
+    initializeAnimations();
+    
+    // Handle form submission
+    handleFormSubmission();
+    
+    // Add interactive effects
+    addInteractiveEffects();
+    
+    // Initialize scroll animations
+    initializeScrollAnimations();
+    
+    // Initialize map interactions
+    initializeMapInteractions();
+});
+
+// Initialize fade-in animations
+function initializeAnimations() {
+    const animatedElements = document.querySelectorAll('.fade-in, .fade-in-delayed');
+    
+    // Add intersection observer for scroll-triggered animations
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    });
+    
+    animatedElements.forEach(element => {
+        // Set initial state
+        element.style.opacity = '0';
+        element.style.transform = 'translateY(30px)';
+        element.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+        
+        observer.observe(element);
+    });
+    
+    // Trigger initial animations for elements in viewport
+    setTimeout(() => {
+        const inViewElements = document.querySelectorAll('.fade-in');
+        inViewElements.forEach(element => {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom > 0) {
+                element.style.opacity = '1';
+                element.style.transform = 'translateY(0)';
+            }
+        });
+    }, 100);
+}
+
+// Initialize map interactions
+function initializeMapInteractions() {
+    const mapControls = document.querySelectorAll('.map-control');
+    const mapMarker = document.querySelector('.marker-pin');
+    
+    // Add click handlers to map controls
+    mapControls.forEach((control, index) => {
+        control.addEventListener('click', function() {
+            // Add click animation
+            this.style.transform = 'scale(0.95)';
+            setTimeout(() => {
+                this.style.transform = 'scale(1.05)';
+                setTimeout(() => {
+                    this.style.transform = 'scale(1)';
+                }, 100);
+            }, 100);
+            
+            // Simulate zoom effect on map
+            const mapPlaceholder = document.querySelector('.map-placeholder');
+            if (index === 0) {
+                // Zoom in
+                mapPlaceholder.style.transform = 'scale(1.1)';
+            } else {
+                // Zoom out
+                mapPlaceholder.style.transform = 'scale(0.9)';
+            }
+            
+            setTimeout(() => {
+                mapPlaceholder.style.transform = 'scale(1)';
+            }, 300);
+        });
+    });
+    
+    // Add click handler to map marker
+    if (mapMarker) {
+        mapMarker.addEventListener('click', function() {
+            // Bounce animation
+            this.style.animation = 'none';
+            setTimeout(() => {
+                this.style.animation = 'bounce 0.6s ease-in-out';
+            }, 10);
+        });
+    }
+    
+    // Add hover effect to map container
+    const mapContainer = document.querySelector('.map-container');
+    if (mapContainer) {
+        mapContainer.addEventListener('mouseenter', function() {
+            const marker = this.querySelector('.marker-pin');
+            if (marker) {
+                marker.style.transform = 'rotate(-45deg) scale(1.1)';
+            }
+        });
+        
+        mapContainer.addEventListener('mouseleave', function() {
+            const marker = this.querySelector('.marker-pin');
+            if (marker) {
+                marker.style.transform = 'rotate(-45deg) scale(1)';
+            }
+        });
+    }
+}
+
+// Handle form submission
+function handleFormSubmission() {
+    const form = document.getElementById('contactForm');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        // Get form data
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData);
+        
+        // Validate form
+        if (validateForm(data)) {
+            // Show loading state
+            showLoadingState();
+            
+            // Simulate form submission
+            setTimeout(() => {
+                showSuccessMessage();
+                form.reset();
+                hideLoadingState();
+            }, 2000);
+        }
+    });
+}
+
+// Form validation
+function validateForm(data) {
+    const errors = [];
+    
+    if (!data.name || data.name.trim().length < 2) {
+        errors.push('Name must be at least 2 characters long');
+    }
+    
+    if (!data.email || !isValidEmail(data.email)) {
+        errors.push('Please enter a valid email address');
+    }
+    
+    if (errors.length > 0) {
+        showErrorMessage(errors.join(', '));
+        return false;
+    }
+    
+    return true;
+}
+
+// Email validation
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}
+
+// Show loading state
+function showLoadingState() {
+    const submitBtn = document.querySelector('.submit-btn');
+    const originalText = submitBtn.innerHTML;
+    
+    submitBtn.innerHTML = `
+        <div class="loading-spinner"></div>
+        Sending...
+    `;
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = '0.7';
+    
+    // Add spinner styles
+    const style = document.createElement('style');
+    style.textContent = `
+        .loading-spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: white;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    // Store original text for restoration
+    submitBtn.dataset.originalText = originalText;
+}
+
+// Hide loading state
+function hideLoadingState() {
+    const submitBtn = document.querySelector('.submit-btn');
+    submitBtn.innerHTML = submitBtn.dataset.originalText;
+    submitBtn.disabled = false;
+    submitBtn.style.opacity = '1';
+}
+
+// Show success message
+function showSuccessMessage() {
+    showNotification('Message sent successfully! We\'ll get back to you soon.', 'success');
+}
+
+// Show error message
+function showErrorMessage(message) {
+    showNotification(message, 'error');
+}
+
+// Generic notification system
+function showNotification(message, type) {
+    // Remove existing notifications
+    const existingNotifications = document.querySelectorAll('.notification');
+    existingNotifications.forEach(notification => notification.remove());
+    
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <span class="notification-icon">
+                ${type === 'success' ? '✓' : '⚠'}
+            </span>
+            <span class="notification-message">${message}</span>
+        </div>
+    `;
+    
+    // Add notification styles
+    const style = document.createElement('style');
+    style.textContent = `
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            padding: 16px 24px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            transform: translateX(100%);
+            transition: transform 0.3s ease;
+            max-width: 400px;
+        }
+        
+        .notification-success {
+            background: #10b981;
+            color: white;
+        }
+        
+        .notification-error {
+            background: #ef4444;
+            color: white;
+        }
+        
+        .notification-content {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .notification-icon {
+            font-weight: bold;
+            font-size: 18px;
+        }
+        
+        .notification-message {
+            flex: 1;
+        }
+    `;
+    document.head.appendChild(style);
+    
+    document.body.appendChild(notification);
+    
+    // Trigger animation
+    setTimeout(() => {
+        notification.style.transform = 'translateX(0)';
+    }, 100);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        notification.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            notification.remove();
+        }, 300);
+    }, 5000);
+}
+
+// Add interactive effects
+function addInteractiveEffects() {
+    // Add ripple effect to buttons
+    const buttons = document.querySelectorAll('.submit-btn');
+    buttons.forEach(button => {
+        button.addEventListener('click', createRippleEffect);
+    });
+    
+    // Add focus effects to form inputs
+    const inputs = document.querySelectorAll('.form-input, .form-textarea');
+    inputs.forEach(input => {
+        input.addEventListener('focus', function() {
+            this.parentElement.classList.add('focused');
+        });
+        
+        input.addEventListener('blur', function() {
+            this.parentElement.classList.remove('focused');
+        });
+    });
+    
+    // Add hover effects to contact cards
+    const cards = document.querySelectorAll('.contact-card');
+    cards.forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-8px) scale(1.02)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0) scale(1)';
+        });
+    });
+}
+
+// Create ripple effect
+function createRippleEffect(e) {
+    const button = e.currentTarget;
+    const rect = button.getBoundingClientRect();
+    const size = Math.max(rect.width, rect.height);
+    const x = e.clientX - rect.left - size / 2;
+    const y = e.clientY - rect.top - size / 2;
+    
+    const ripple = document.createElement('div');
+    ripple.style.cssText = `
+        position: absolute;
+        width: ${size}px;
+        height: ${size}px;
+        left: ${x}px;
+        top: ${y}px;
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 50%;
+        transform: scale(0);
+        animation: ripple 0.6s linear;
+        pointer-events: none;
+    `;
+    
+    // Add ripple animation
+    const style = document.createElement('style');
+    style.textContent = `
+        @keyframes ripple {
+            to {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+    
+    button.style.position = 'relative';
+    button.style.overflow = 'hidden';
+    button.appendChild(ripple);
+    
+    setTimeout(() => {
+        ripple.remove();
+    }, 600);
+}
+
+// Initialize scroll animations
+function initializeScrollAnimations() {
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+}
+
+// Add some interactive phone and email functionality
+document.addEventListener('DOMContentLoaded', function() {
+    // Make phone numbers clickable
+    const phoneLinks = document.querySelectorAll('.phone-link');
+    phoneLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const phoneNumber = this.textContent.replace(/\D/g, '');
+            window.location.href = `tel:+${phoneNumber}`;
+        });
+    });
+    
+    // Make email addresses clickable
+    const emailLinks = document.querySelectorAll('.email-link');
+    emailLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const email = this.textContent;
+            window.location.href = `mailto:${email}`;
+        });
+    });
+});
+    </script>
+</body>
+</html>

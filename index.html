@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentaire - Dental Excellence</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-tooth"></i>
+                <span>Dentaire</span>
+            </div>
+            
+            <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="aboutus.html" class="nav-link">About Us</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="blogs.html" class="nav-link">Blogs <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <button class="appointment-btn">
+                    <span>Book Appointment</span>
+                    <i class="fas fa-calendar-alt"></i>
+                </button>
+                <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="floating-star star-1">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Experience <span class="highlight">Dental</span><br>
+                        <span class="highlight">Excellence</span> with a<br>
+                        Gentle Touch
+                    </h1>
+                    
+                    <p class="hero-description">
+                        It is a long established fact that a reader will be distracted by the 
+                        readable content of a page when looking at its layout. The point of 
+                        using Lorem Ipsum is that it has a more-or-less normal.
+                    </p>
+                    
+                    <button class="cta-btn">
+                        Make An Appointment
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    
+                    <div class="rating">
+                        <span class="rating-label">Google Rating</span>
+                        <div class="rating-content">
+                            <span class="rating-score">5.0</span>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">Based on 492 Reviews</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="floating-elements">
+                        <div class="floating-tooth tooth-1">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <div class="floating-tooth tooth-2">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <div class="floating-tooth tooth-3">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <div class="floating-star star-2">
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    
+                    <div class="doctor-image">
+                        <img src="images/hero-img.png" alt="Dr. Clara Lee" class="main-doctor">
+                    </div>
+                    
+                    <div class="doctor-card">
+                        <div class="doctor-info">
+                            <img src="https://images.pexels.com/photos/4173239/pexels-photo-4173239.jpeg?auto=compress&cs=tinysrgb&w=200" alt="Dr. Clara Lee" class="doctor-avatar">
+                            <div class="doctor-details">
+                                <h4>Dr. Clara Lee</h4>
+                                <p>Dentist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-background">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </section>
+
+    <!-- Contact Footer -->
+    <section class="contact-footer">
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Need Dental Services ?</h3>
+                        <p>Call on : <a href="tel:+19878287455">(+01) 987 828 745</a></p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Opening Hours</h3>
+                        <p>Mon to Sat 9:00AM to 9:00PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="appointment-btn-footer">
+                Make An Appointment
+                <i class="fas fa-calendar-alt"></i>
+            </button>
+        </div>
+    </section>
+
+<!--about us section-->
+
+<section class="about-section">
+    <!-- Star Backgrounds -->
+    <div class="star-bg star1"></div>
+    <div class="star-bg star2"></div>
+    <div class="star-bg star3"></div>
+
+    <!-- Left Image Section -->
+    <div class="image-container">
+      <img src="images/about-us-img-2.jpg" class="top-image" alt="Dental Patient" />
+      <img src="images/about-us-img-1.jpg" class="bottom-image" alt="Clinic Room" />
+      <div class="experience-badge">EXPERIENCE<br>15 YEARS</div>
+    </div>
+
+    <!-- Right Text Section -->
+    <div class="text-content">
+      <div class="label">+ About Us</div>
+      <h2><span>Your Journey</span> to a Healthier Smile Begins Here</h2>
+      <p>
+        The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, and specialist dental treatments. With dental practices throughout the world.
+      </p>
+
+      <div class="features">
+        <div class="feature-item">Experienced Team</div>
+        <div class="feature-item">Comprehensive Services</div>
+        <div class="feature-item">State-Of-The-Art Technology</div>
+        <div class="feature-item">Emergency Dental Services</div>
+      </div>
+
+      <a href="#" class="cta-button">Read More About Us <span>➜</span></a>
+    </div>
+  </section>
+
+
+  <!--our services section-->
+
+
+   <main class="main-container">
+        <!-- Services Section -->
+        <section class="services-section">
+            <div class="container">
+                <!-- Header -->
+                <div class="section-header fade-in">
+                    <span class="section-tag">OUR SERVICES</span>
+                    <h2 class="section-title">High Quality <span class="highlight">Services for You.</span></h2>
+                    <p class="section-subtitle">We are committed to sustainability, eco-friendly initiatives.</p>
+                </div>
+
+                <!-- Service Cards Grid -->
+                <div class="services-grid">
+                    <div class="service-card fade-in" data-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-tooth"></i>
+                        </div>
+                        <h3 class="service-title">General Dental Care</h3>
+                        <p class="service-description">We are excited to meet you and provide the best dental care for your family.</p>
+                        <button class="read-more-btn">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="service-card fade-in" data-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3 class="service-title">Dental Implants</h3>
+                        <p class="service-description">We are excited to meet you and provide the best dental care for your family.</p>
+                        <button class="read-more-btn">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="service-card fade-in" data-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-smile"></i>
+                        </div>
+                        <h3 class="service-title">Cosmetic Dentistry</h3>
+                        <p class="service-description">We are excited to meet you and provide the best dental care for your family.</p>
+                        <button class="read-more-btn">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="service-card fade-in" data-delay="400">
+                        <div class="service-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="service-title">Teeth Whitening</h3>
+                        <p class="service-description">We are excited to meet you and provide the best dental care for your family.</p>
+                        <button class="read-more-btn">
+                            Read More
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Bottom Text -->
+                <div class="bottom-text fade-in" data-delay="500">
+                    <p>We believe in using the latest technology and techniques to ensure the best outcomes for our patients.</p>
+                    <button class="view-all-btn">
+                        View All Services
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Banner Video Section -->
+        <section class="banner-video-section fade-in" data-delay="600">
+            <div class="container">
+                <div class="banner-content-wrapper">
+                    <div class="banner-content">
+                        <span class="banner-tag">VISIT CLINIC</span>
+                        <h2 class="banner-title">Comprehensive Dental Care<br>For All Ages</h2>
+                        <button class="play-video-btn">
+                            <i class="fas fa-play"></i>
+                            Play Video
+                        </button>
+                    </div>
+                    <div class="banner-image">
+                        <img src="https://images.pexels.com/photos/3845653/pexels-photo-3845653.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dental Clinic Interior" />
+                        <div class="banner-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item fade-in" data-delay="100">
+                        <div class="stat-number" data-target="75">0</div>
+                        <div class="stat-suffix">+</div>
+                        <h3 class="stat-title">Insurance Covered</h3>
+                        <p class="stat-description">Our team loves dental trivia. Did you know that tooth enamel.</p>
+                    </div>
+
+                    <div class="stat-item fade-in" data-delay="200">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-suffix">K</div>
+                        <h3 class="stat-title">Realized Projects</h3>
+                        <p class="stat-description">Our team loves dental trivia. Did you know that tooth enamel.</p>
+                    </div>
+
+                    <div class="stat-item fade-in" data-delay="300">
+                        <div class="stat-number" data-target="22">0</div>
+                        <div class="stat-suffix">K</div>
+                        <h3 class="stat-title">Happy Customers</h3>
+                        <p class="stat-description">Our team loves dental trivia. Did you know that tooth enamel.</p>
+                    </div>
+
+                    <div class="stat-item fade-in" data-delay="400">
+                        <div class="stat-number" data-target="18">0</div>
+                        <div class="stat-suffix">+</div>
+                        <h3 class="stat-title">Experience Doctors</h3>
+                        <p class="stat-description">Our team loves dental trivia. Did you know that tooth enamel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Decorative Elements -->
+        <div class="decorative-stars">
+            <div class="star star-1">✦</div>
+            <div class="star star-2">✦</div>
+            <div class="star star-3">✦</div>
+            <div class="star star-4">✦</div>
+        </div>
+    </main>
+
+
+    <!--work-->
+    <section class="work">
+    <section class="section-container">
+    <div class="image-wrapper">
+      <img src="images/how-it-work-img.jpg" alt="Dental Treatment" class="dental-image"/>
+    </div>
+
+    <div class="content-wrapper">
+      <p class="sub-heading">+ HOW IT WORK</p>
+      <h2 class="main-heading"><span>What We Do</span> for Your Teeth</h2>
+      <p class="description">
+        We are committed to sustainability. Our clinic practices eco-friendly initiatives like digital records to reduce paper waste and energy-efficient equipment.
+      </p>
+
+      <div class="accordion">
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            <h3>1. Book An Appointment</h3>
+            <span class="icon">▲</span>
+          </div>
+          <div class="accordion-content">
+            <p>The goal of our clinic is to provide friendly, caring dentistry and the highest level of general, cosmetic, ents.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>2. What Conditions Can Manual Therapy Treat?</h3>
+            <span class="icon">▼</span>
+          </div>
+          <div class="accordion-content">
+            <p>We treat a variety of dental conditions including gum disease, tooth decay, and jaw issues.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <h3>3. Expert Care</h3>
+            <span class="icon">▼</span>
+          </div>
+          <div class="accordion-content">
+            <p>Our experts have years of experience ensuring you get top-notch care in every visit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+<!--team-->
+ <section class="team">
+    <section class="team-section">
+      <h2>Our Friendly Dentists Team</h2>
+      <p>We are committed to sustainability, eco-friendly initiatives.</p>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="images/team-1.jpg" alt="Dr. Johanan Joe">
+          <h3>Dr. Johanan Joe</h3>
+          <span>Lead Dentist</span>
+        </div>
+        <div class="team-card">
+          <img src="images/team-2.jpg" alt="Dr. Mik Johnson">
+          <h3>Dr. Mik Johnson</h3>
+          <span>Senior Dentist</span>
+        </div>
+        <div class="team-card">
+          <img src="images/team-3.jpg" alt="Dr. Alison Banson">
+          <h3>Dr. Alison Banson</h3>
+          <span>Orthodontist</span>
+        </div>
+        <div class="team-card">
+          <img src="images/team-4.jpg" alt="Dr. Christopher Case">
+          <h3>Dr. Christopher Case</h3>
+          <span>Periodontist</span>
+        </div>
+      </div>
+    </section>
+  </section>
+
+ <!-- Testimonial Section (existing) -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">+ TESTIMONIAL</span>
+                <h2 class="section-title">What our <span class="highlight">Client Say</span></h2>
+                <p class="section-subtitle">We are committed to sustainability, eco-friendly initiatives.</p>
+            </div>
+            
+            <div class="testimonial-content">
+                <div class="testimonial-left fade-in-left">
+                    <div class="testimonial-image-container">
+                        <img src="https://images.pexels.com/photos/6812472/pexels-photo-6812472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Medical consultation" class="testimonial-image">
+                        
+                        <div class="rating-card">
+                            <div class="rating-score">4.7<span class="total">/5</span></div>
+                            <p class="rating-text">This Rate Is Given By User After Visiting Our Location</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="rating-label">For Excellence Services</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-right fade-in-right">
+                    <div class="quote-container">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        
+                        <p class="quote-text">"I want to say thank you to my doctor Steve! Vivamus sagittis massa vitae bibendum rhoncus. Duis cursus." "Thank you for helping me overcome my fear of the dentist! Vivamus sagittis massa vitae bibendum rhoncus. Duis cursus."</p>
+                        
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Robert Lee">
+                            </div>
+                            <div class="client-details">
+                                <h4 class="client-name">Robert Lee</h4>
+                                <p class="client-role">software engineer</p>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-nav">
+                            <button class="nav-btn prev-btn" onclick="previousTestimonial()">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="nav-btn next-btn" onclick="nextTestimonial()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Articles Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">+ BLOGS</span>
+                <h2 class="section-title">Check Our <span class="highlight">Latest Articles</span></h2>
+                <p class="section-subtitle">We are committed to sustainability, eco-friendly initiatives.</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card fade-in-up" data-delay="0">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/6812472/pexels-photo-6812472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dental Check-up" class="blog-image">
+                        <div class="blog-overlay">
+                            <div class="blog-category">Dental Care</div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">The Importance Of Regular Dental Check-Ups</h3>
+                        <p class="blog-excerpt">Maintaining oral health is crucial not only for a bright...</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up" data-delay="200">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/6812465/pexels-photo-6812465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Teeth Whitening" class="blog-image">
+                        <div class="blog-overlay">
+                            <div class="blog-category">Cosmetic</div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Top 5 Benefits Of Professional Teeth Whitening</h3>
+                        <p class="blog-excerpt">Maintaining oral health is crucial not only for a bright...</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up" data-delay="400">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/6812470/pexels-photo-6812470.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dental Implants" class="blog-image">
+                        <div class="blog-overlay">
+                            <div class="blog-category">Implants</div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Understanding Dental Implants: What You Need To Know</h3>
+                        <p class="blog-excerpt">Maintaining oral health is crucial not only for a bright...</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Decorative Stars -->
+        <div class="star star-1">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="star star-2">
+            <i class="fas fa-star"></i>
+        </div>
+    </section>
+
+
+
+<!--conatact us-->
+<section class="contact">
+<div class="container-contact">
+    <div class="map-section">
+      <img src="https://via.placeholder.com/600x400" alt="Map">
+    </div>
+    <div class="contact-section">
+      <h2>Get Free Professional Consultation</h2>
+      <p><span style="color: #0066cc;">📍</span> 24/11 Robert Road, New York, USA</p>
+      <p><span style="color: #0066cc;">📞</span> +123 888-5245</p>
+      <p><span style="color: #0066cc;">📧</span> info@domain.com</p>
+      <a href="#">Make An Appointment</a>
+    </div>
+  </div>
+  </section>
+
+
+ <!--footer-->
+ <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo & Description -->
+      <div class="footer-col logo-col">
+        <h2>
+          <!-- Inline SVG Tooth Icon -->
+          <svg class="logo-icon" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 4C17 4 4 16 4 32s13 28 28 28 28-13 28-28S47 4 32 4zm0 4a24 24 0 0124 24c0 13.3-10.7 24-24 24S8 45.3 8 32 18.7 8 32 8z"/>
+            <path d="M24 20c-2 0-2 4-2 6s0 6 2 6 4-2 4-4-2-8-4-8zm16 0c-2 0-4 6-4 8s2 4 4 4 2-4 2-6 0-6-2-6z"/>
+          </svg>
+          <span>Dentaire</span>
+        </h2>
+        <p>
+          The goal our clinic is provide friendly, caring dentistry and highest level of general, cosmetic, and specialist dental treatments.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Appointment</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:info@domain.com">Info@Domain.Com</a></li>
+          <li><a href="tel:+1236985245">+(123) 698-5245</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      Copyright © 2024 All Rights Reserved.
+    </div>
+  </footer>
+
+  <!--js-->
+   
+    <script src="script.js"></script>
+    <script>
+         const accordionItems = document.querySelectorAll(".accordion-item");
+
+    accordionItems.forEach(item => {
+      const header = item.querySelector(".accordion-header");
+
+      header.addEventListener("click", () => {
+        accordionItems.forEach(i => {
+          if (i !== item) {
+            i.classList.remove("active");
+          }
+        });
+        item.classList.toggle("active");
+
+        // Update icon text
+        document.querySelectorAll(".accordion-header .icon").forEach(icon => {
+          icon.textContent = "▼";
+        });
+        const icon = item.querySelector(".icon");
+        icon.textContent = item.classList.contains("active") ? "▲" : "▼";
+      });
+    });
+
+//team
+     document.addEventListener("DOMContentLoaded", () => {
+      const cards = document.querySelectorAll(".team-card");
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1 });
+
+      cards.forEach(card => {
+        observer.observe(card);
+      });
+    });
+
+
+
+
+
+    
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

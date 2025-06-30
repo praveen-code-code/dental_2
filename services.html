@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Services - High Quality Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<style>
+    .about-hero{
+          margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgba(239,248,255,255);
+    }
+     .about-section-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+        .about-section-hero h1 {
+            color: #1e3a8a;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #1e3a8a, #1e40af);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .about-section-hero p {
+            color: #1e40af;
+            font-size: 1em;
+            background: linear-gradient(to right, #1e40af, #1e3a8a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+      .about-section-hero p a{
+             text-decoration: none;
+        }
+        .background-icons-hero {
+           
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            text-decoration: none;
+        }
+        .background-icons-hero .icon {
+            position: absolute;
+            opacity: 0.3;
+        }
+        .background-icons-hero .star {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #04187b, #0c033cf4);
+            clip-path: polygon(50% 0%, 65% 35%, 100% 35%, 75% 55%, 85% 85%, 50% 70%, 15% 85%, 25% 55%, 0% 35%, 35% 35%);
+            filter: blur(2px);
+        }
+        @media (min-width: 768px) {
+            .about-section-hero h1 { font-size: 3em; }
+            .about-section p { font-size: 1.2em; }
+        }
+        @media (min-width: 1024px) {
+            .about-section-hero { min-height: 300px; }
+        }
+        .container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+
+</style>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <i class="fas fa-tooth"></i>
+            <span>Dentaire</span>
+        </div>
+        
+      <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="aboutus.html" class="nav-link">About Us</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="blogs.html" class="nav-link">Blogs <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+            </div>
+
+        <div class="nav-actions">
+            <button class="appointment-btn">
+                <span>Book Appointment</span>
+                <i class="fas fa-calendar-alt"></i>
+            </button>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="about-hero">
+  <div class="about-section-hero">
+        <div class="background-icons-hero">
+            <div class="icon star" style="top: 10%; left: 10%;"></div>
+            <div class="icon star" style="top: 70%; right: 10%;"></div>
+            <div class="icon star" style="top: 30%; left: 20%;"></div>
+            <div class="icon star" style="top: 50%; right: 20%;"></div>
+            <div class="icon star" style="top: 60%; left: 30%;"></div>
+            <div class="icon star" style="top: 20%; right: 30%;"></div>
+        </div>
+        <h1>Services</h1>
+        <p><a href="index.html">Home</a> / services</p>
+    </div>
+</section>
+   <!--servies-->
+
+<section class="services-section-body">
+    <div class="container-services-section">
+        <!-- Header Section -->
+        <div class="header-services-section">
+            <h1 class="main-title-services-section">Our Dental Services</h1>
+            <p class="subtitle-services-section">Comprehensive dental care for you and your family with modern techniques and personalized treatment plans.</p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="services-grid-services-section" id="servicesGrid">
+            <!-- Cards will be generated by JavaScript -->
+        </div>
+    </div>
+</section>
+
+ <!-- Testimonial Section (existing) -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">+ TESTIMONIAL</span>
+                <h2 class="section-title">What our <span class="highlight">Client Say</span></h2>
+                <p class="section-subtitle">We are committed to sustainability, eco-friendly initiatives.</p>
+            </div>
+            
+            <div class="testimonial-content">
+                <div class="testimonial-left fade-in-left">
+                    <div class="testimonial-image-container">
+                        <img src="https://images.pexels.com/photos/6812472/pexels-photo-6812472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Medical consultation" class="testimonial-image">
+                        
+                        <div class="rating-card">
+                            <div class="rating-score">4.7<span class="total">/5</span></div>
+                            <p class="rating-text">This Rate Is Given By User After Visiting Our Location</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <p class="rating-label">For Excellence Services</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-right fade-in-right">
+                    <div class="quote-container">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        
+                        <p class="quote-text">"I want to say thank you to my doctor Steve! Vivamus sagittis massa vitae bibendum rhoncus. Duis cursus." "Thank you for helping me overcome my fear of the dentist! Vivamus sagittis massa vitae bibendum rhoncus. Duis cursus."</p>
+                        
+                        <div class="client-info">
+                            <div class="client-avatar">
+                                <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=100" alt="Robert Lee">
+                            </div>
+                            <div class="client-details">
+                                <h4 class="client-name">Robert Lee</h4>
+                                <p class="client-role">software engineer</p>
+                            </div>
+                        </div>
+                        
+                        <div class="testimonial-nav">
+                            <button class="nav-btn prev-btn" onclick="previousTestimonial()">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="nav-btn next-btn" onclick="nextTestimonial()">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!--footer-->
+ <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo & Description -->
+      <div class="footer-col logo-col">
+        <h2>
+          <!-- Inline SVG Tooth Icon -->
+          <svg class="logo-icon" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 4C17 4 4 16 4 32s13 28 28 28 28-13 28-28S47 4 32 4zm0 4a24 24 0 0124 24c0 13.3-10.7 24-24 24S8 45.3 8 32 18.7 8 32 8z"/>
+            <path d="M24 20c-2 0-2 4-2 6s0 6 2 6 4-2 4-4-2-8-4-8zm16 0c-2 0-4 6-4 8s2 4 4 4 2-4 2-6 0-6-2-6z"/>
+          </svg>
+          <span>Dentaire</span>
+        </h2>
+        <p>
+          The goal our clinic is provide friendly, caring dentistry and highest level of general, cosmetic, and specialist dental treatments.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Appointment</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:info@domain.com">Info@Domain.Com</a></li>
+          <li><a href="tel:+1236985245">+(123) 698-5245</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      Copyright © 2024 All Rights Reserved.
+    </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Services - High Quality Care</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<style>
+    .about-hero{
+          margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: rgba(239,248,255,255);
+    }
+     .about-section-hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+        .about-section-hero h1 {
+            color: #1e3a8a;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #1e3a8a, #1e40af);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .about-section-hero p {
+            color: #1e40af;
+            font-size: 1em;
+            background: linear-gradient(to right, #1e40af, #1e3a8a);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .about-section-hero p a{
+             text-decoration: none;
+        }
+        .background-icons-hero {
+           
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            text-decoration: none;
+        }
+        .background-icons-hero .icon {
+            position: absolute;
+            opacity: 0.3;
+        }
+        .background-icons-hero .star {
+            width: 40px;
+            height: 40px;
+            background: radial-gradient(circle, #04187b, #0c033cf4);
+            clip-path: polygon(50% 0%, 65% 35%, 100% 35%, 75% 55%, 85% 85%, 50% 70%, 15% 85%, 25% 55%, 0% 35%, 35% 35%);
+            filter: blur(2px);
+        }
+        @media (min-width: 768px) {
+            .about-section-hero h1 { font-size: 3em; }
+            .about-section p { font-size: 1.2em; }
+        }
+        @media (min-width: 1024px) {
+            .about-section-hero { min-height: 300px; }
+        }
+</style>
+<body>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <i class="fas fa-tooth"></i>
+            <span>Dentaire</span>
+        </div>
+      <div class="nav-menu" id="nav-menu">
+                <div class="nav-item dropdown">
+                    <a href="index.html" class="nav-link">Home <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="aboutus.html" class="nav-link">About Us</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="blogs.html" class="nav-link">Blogs <i class="fas fa-chevron-down"></i></a>
+                </div>
+                <div class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact Us</a>
+                </div>
+            </div>
+
+        <div class="nav-actions">
+            <button class="appointment-btn">
+                <span>Book Appointment</span>
+                <i class="fas fa-calendar-alt"></i>
+            </button>
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</nav>
+<section class="about-hero">
+  <div class="about-section-hero">
+        <div class="background-icons-hero">
+            <div class="icon star" style="top: 10%; left: 10%;"></div>
+            <div class="icon star" style="top: 70%; right: 10%;"></div>
+            <div class="icon star" style="top: 30%; left: 20%;"></div>
+            <div class="icon star" style="top: 50%; right: 20%;"></div>
+            <div class="icon star" style="top: 60%; left: 30%;"></div>
+            <div class="icon star" style="top: 20%; right: 30%;"></div>
+        </div>
+        <h1>Our blogs</h1>
+        <p><a href="index.html">Home</a> / blogs</p>
+    </div>
+</section>
+   <!-- Blog Articles Section -->
+    <section class="blog-section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <span class="section-tag">+ BLOGS</span>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card fade-in-up" data-delay="0">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/6812472/pexels-photo-6812472.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dental Check-up" class="blog-image">
+                        <div class="blog-overlay">
+                            <div class="blog-category">Dental Care</div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">The Importance Of Regular Dental Check-Ups</h3>
+                        <p class="blog-excerpt">Maintaining oral health is crucial not only for a bright...</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up" data-delay="200">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/6812465/pexels-photo-6812465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Teeth Whitening" class="blog-image">
+                        <div class="blog-overlay">
+                            <div class="blog-category">Cosmetic</div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Top 5 Benefits Of Professional Teeth Whitening</h3>
+                        <p class="blog-excerpt">Maintaining oral health is crucial not only for a bright...</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                 <article class="blog-card fade-in-up" data-delay="200">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/6812465/pexels-photo-6812465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Teeth Whitening" class="blog-image">
+                        <div class="blog-overlay">
+                            <div class="blog-category">Cosmetic</div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Top 5 Benefits Of Professional Teeth Whitening</h3>
+                        <p class="blog-excerpt">Maintaining oral health is crucial not only for a bright...</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                 <article class="blog-card fade-in-up" data-delay="200">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/6812465/pexels-photo-6812465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Teeth Whitening" class="blog-image">
+                        <div class="blog-overlay">
+                            <div class="blog-category">Cosmetic</div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Top 5 Benefits Of Professional Teeth Whitening</h3>
+                        <p class="blog-excerpt">Maintaining oral health is crucial not only for a bright...</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                 <article class="blog-card fade-in-up" data-delay="200">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/6812465/pexels-photo-6812465.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Teeth Whitening" class="blog-image">
+                        <div class="blog-overlay">
+                            <div class="blog-category">Cosmetic</div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Top 5 Benefits Of Professional Teeth Whitening</h3>
+                        <p class="blog-excerpt">Maintaining oral health is crucial not only for a bright...</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="blog-card fade-in-up" data-delay="400">
+                    <div class="blog-image-container">
+                        <img src="https://images.pexels.com/photos/6812470/pexels-photo-6812470.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Dental Implants" class="blog-image">
+                        <div class="blog-overlay">
+                            <div class="blog-category">Implants</div>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3 class="blog-title">Understanding Dental Implants: What You Need To Know</h3>
+                        <p class="blog-excerpt">Maintaining oral health is crucial not only for a bright...</p>
+                        <div class="blog-footer">
+                            <a href="#" class="read-more-btn">
+                                Read More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- Decorative Stars -->
+        <div class="star star-1">
+            <i class="fas fa-star"></i>
+        </div>
+        <div class="star star-2">
+            <i class="fas fa-star"></i>
+        </div>
+    </section>
+
+
+<!--footer-->
+ <footer class="footer">
+    <div class="footer-container">
+      <!-- Logo & Description -->
+      <div class="footer-col logo-col">
+        <h2>
+          <!-- Inline SVG Tooth Icon -->
+          <svg class="logo-icon" viewBox="0 0 64 64" fill="white" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32 4C17 4 4 16 4 32s13 28 28 28 28-13 28-28S47 4 32 4zm0 4a24 24 0 0124 24c0 13.3-10.7 24-24 24S8 45.3 8 32 18.7 8 32 8z"/>
+            <path d="M24 20c-2 0-2 4-2 6s0 6 2 6 4-2 4-4-2-8-4-8zm16 0c-2 0-4 6-4 8s2 4 4 4 2-4 2-6 0-6-2-6z"/>
+          </svg>
+          <span>Dentaire</span>
+        </h2>
+        <p>
+          The goal our clinic is provide friendly, caring dentistry and highest level of general, cosmetic, and specialist dental treatments.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Appointment</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-col">
+        <h4>Social Media</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><a href="mailto:info@domain.com">Info@Domain.Com</a></li>
+          <li><a href="tel:+1236985245">+(123) 698-5245</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="copyright">
+      Copyright © 2024 All Rights Reserved.
+    </div>
+  </footer>
+    <script src="script.js"></script>
+</body>
+</html>
